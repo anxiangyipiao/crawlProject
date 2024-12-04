@@ -7,7 +7,7 @@ from urllib.parse import urlencode
 import requests
 from playwright.sync_api import sync_playwright
 
-HTML_FILEPATH: str = 'file://D:/crawlProjects/饿了么/hello.html'
+HTML_FILEPATH: str = './饿了么/hello.html'
 
 URLS = [
     'https://waimai-guide.ele.me/h5/mtop.alsc.eleme.miniapp.homepagev1/1.0/5.0/',
