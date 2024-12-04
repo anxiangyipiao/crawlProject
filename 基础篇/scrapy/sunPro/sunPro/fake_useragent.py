@@ -183,9 +183,6 @@ def get_requests_headers():
         'Accept-Language': 'zh-CN,zh;q=0.8',
         'Connection': 'keep-alive',
         'Accept-Encoding': 'gzip, deflate, br',
-        # 'Host': 'www.zhipin.com',
-        # 'Origin': 'https://www.zhipin.com',
-        # 'Referer': 'https://www.zhipin.com/',
     }
 
 

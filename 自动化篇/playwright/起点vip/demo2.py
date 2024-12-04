@@ -1,7 +1,7 @@
 import playwright.sync_api
+from typing import List, Dict
 
-
-def run(syncPlayWright: playwright.sync_api.Playwright, url: str, savePath: str, cookies: list[dict]):
+def run(syncPlayWright: playwright.sync_api.Playwright, url: str, savePath: str, cookies: List[Dict]):
     run_js = 'document.getElementById("navbar").remove();'
     browser = syncPlayWright.chromium.launch(
         headless=False,

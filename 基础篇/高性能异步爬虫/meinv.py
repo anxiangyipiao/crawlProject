@@ -30,6 +30,7 @@ headers = {
 
 
 def getUrl(page):
+    
     all = []
     response = requests.get(f'https://desk.3gbizhi.com/deskMV/index_{page}.html', cookies=cookies, headers=headers)
     tree = etree.HTML(response.text)
@@ -60,11 +61,14 @@ async def thread(url, name):
 
 
 if __name__ == '__main__':
+    
     if not os.path.exists('./picLibs'):
         os.mkdir('./picLibs')
+    
     loop = asyncio.get_event_loop()
+
     for page in range(1, 24):
-        print(page)
+
         all = getUrl(page)
         URL = []
         for data in all:
